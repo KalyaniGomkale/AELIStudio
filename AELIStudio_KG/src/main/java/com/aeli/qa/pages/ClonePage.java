@@ -77,5 +77,13 @@ public class ClonePage extends TestBase {
 		Thread.sleep(3000);
 		projectspage.validateLogOut();
 	}
+	
+	public void validateImportWithDuplicateName(){
+		wait.until(ExpectedConditions.visibilityOf(cloneTab));
+		cloneTab.click();
+		Reporter.log("Clone Tab is clicked", true);
+		projectName.sendKeys(ProjectName);
+		Thread.sleep(3000);
+	}
 
 }
