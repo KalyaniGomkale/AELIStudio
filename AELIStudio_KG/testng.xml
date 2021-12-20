@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="1" name="Test">
+		<classes>
+			<class name="com.aeli.qa.testcases.NewProjectPageTest">
+				<methods>
+					<include name="validateAddNewProjectTest" />
+					<include name="validateAddNewKMProjectTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.ImportPageTest">
+				<methods>
+					<include name="validateImportProjectTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.ClonePageTest">
+				<methods>
+					<include name="validateCloingProjectTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.UserPageTest">
+				<methods>
+					<include name="validateCreateTATest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.ProjectsPageTest">
+				<methods>
+					<include name="validateDownloadExportProjectTest" />
+					<include name="validatedeleteProjectTest" />
+					<include name="validateDeletionFromRecordsTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.IntentPageTest">
+				<methods>
+					<include name="validateCreatingIntentTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.EntityPageTest">
+				<methods>
+					<include name="validateCreatingEntitiesTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.MappingPageTest">
+				<methods>
+					<include name="validateAddMappingTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.UtterancePageTest">
+				<methods>
+					<include name="validateCreatingUtteranceTest" />
+				</methods>
+			</class>
+
+			<class name="com.aeli.qa.testcases.TrainPageTest">
+				<methods>
+					<include name="validateTrainProjectTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcases.PredictionPageTest">
+				<methods>
+					<include name="validateFinalIntentTest" />
+				</methods>
+			</class>
+
+
+			<class name="com.aeli.qa.testcases.KnowledgeBasePageTest">
+				<methods>
+					<include name="validateUploadDocxTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcasesSysadmin.UserPageSysTest">
+				<methods>
+					<include name="validateCreateSysadminTest" />
+					<include name="validateEditSysadminTest" />
+				</methods>
+			</class>
+			<class name="com.aeli.qa.testcasesSysadmin.TenantPageSysTest">
+				<methods>
+					<include name="validateCreateNewTenantTest" />
+					<include name="validateEditTenantTest" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+	<listeners>
+		<listener
+			class-name="com.aeli.qa.Listeners.ITestListenerImplementation"></listener>
+	</listeners>
+</suite> <!-- Suite -->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.aeli.qa.Listeners.ITestListenerImplementation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.aeli.qa.testcases.IntentPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="validateCreatingIntentTest"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.IntentPageTest -->
+      <class name="com.aeli.qa.testcases.ImportPageTest">
+        <methods>
+          <include name="validateImportProjectTest"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.ImportPageTest -->
+      <class name="com.aeli.qa.testcases.NewProjectPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="validateAddNewKMProjectTest"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+          <include name="validateAddNewProjectTest"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.NewProjectPageTest -->
+      <class name="com.aeli.qa.testcases.ProjectsPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="validateDownloadExportProjectTest"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.ProjectsPageTest -->
+      <class name="com.aeli.qa.testcases.ClonePageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="validateCloingProjectTest"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.ClonePageTest -->
+      <class name="com.aeli.qa.testcases.UserPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="validateCreateTATest"/>
+          <include name="startReport"/>
+          <include name="initialization"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.aeli.qa.testcases.UserPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
