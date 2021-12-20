@@ -84,6 +84,7 @@ public class ClonePage extends TestBase {
 		Reporter.log("Clone Tab is clicked", true);
 		projectName.sendKeys(ProjectName);
 		Thread.sleep(3000);
+		projectspage.validateLogOut();
 	}
 
 }
