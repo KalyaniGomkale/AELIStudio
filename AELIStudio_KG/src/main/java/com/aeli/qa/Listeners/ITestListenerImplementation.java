@@ -20,6 +20,7 @@ public class ITestListenerImplementation implements ITestListener
 	}
 	// When Test case get failed, this method is called
 	public void onTestFailure(ITestResult result) {
+system.out.println("Failed test cases");
 		System.out.println("The name of the testcase failed is :"+result.getName());
 	}
     // When Test case get Skipped, this method is called.
